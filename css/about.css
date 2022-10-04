@@ -1,0 +1,148 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Logo design */
+.logo {
+    padding: 15px 20px 0 0;
+    font-size: 22px;
+    font-weight: 300;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+nav .menu-nav .menu-nav__item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav .menu-nav .menu-nav__item .menu-nav__link {
+    color: rgb(7, 17, 15);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-nav__link.active,
+.menu-nav__link:hover {
+    background: rgb(0, 140, 207);
+    transition: .5s;
+}
+
+.resume {
+    margin-left: 8rem;
+}
+
+main {
+    width: 100vw;
+    padding-bottom: 1rem;
+}
+
+main .about {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0 15%;
+}
+
+main .about .bio {
+    width: 65vw;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+main .about .bio__h2 {
+    display: flex;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(0, 140, 207);
+}
+
+main .about .bio p {
+    margin-top: 0;
+    font-weight: 600;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    border: 2px solid rgb(92, 117, 65);
+    border-radius: 15px 15px 0 0;
+}
+
+main .about .bio p a {
+    color: rgb(0, 140, 207);
+    text-decoration: none;
+}
+
+main .about .experience {
+    margin-top: 3rem;
+}
+
+main .about .experience__job {
+    padding: 1rem;
+}
+
+main .about .experience__job-h2 {
+    color: rgb(0, 140, 207);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main .about .experience h3,
+main .about .experience h4 {
+    font-weight: 500;
+    font-size: medium;
+    margin: 5px 0;
+}
+
+main .about .experience h5 {
+    font-size: medium;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+main .about .experience h6 {
+    font-size: medium;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+main .about .experience ul {
+    margin: 0;
+    list-style: none;
+    border-left: 0.2rem solid rgb(0, 140, 207);
+}
+
+main .about .experience ul li {
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+main .social-icons {
+    display: flex;
+    flex-direction: column;
+    transform: translate(5%, -15rem);
+}
+
+main .social-icons a {
+    font-size: small;
+    color: rgb(0, 140, 207);
+    padding: 0.3em;
+}
+
+main .social-icons a i:hover {
+    color: rgb(126, 81, 30);
+    transition: all 0.7s ease-in-out;
+}
