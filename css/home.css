@@ -1,10 +1,16 @@
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+
 }
 
+body {
+  height: 100vh;
+}
 /* Header design */
 header {
   z-index: 3;
+  margin: 0.5rem;
 }
 
 /* Logo design */
@@ -22,6 +28,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  margin: 0.5rem;
 }
 
 
@@ -47,9 +54,54 @@ nav .menu-nav .menu-nav__item .menu-nav__link {
 
 .resume {
   margin-left: 8rem;
+  padding-right: 2rem;
 }
 
 /* Main page */
 
+main {
+  margin-top: 4rem;
+  padding: 5%;
+}
 
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home-name {
+  margin-bottom: 1rem;
+}
+.home-name h1 {
+  font-weight: 700;
+}
+.home-name p {
+  padding-top: 0.5rem;
+}
+.home-name .home-btn {
+  background: rgb(0, 140, 207);
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 7px;
+  border: 0;
+}
 
+.home__intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+}
+
+.home__intro h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: rgb(0, 140, 207);
+}
+.home__intro p {
+  margin-top: 0.5rem;
+  border: 2px solid;
+  line-height: 1.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1rem;
+}
