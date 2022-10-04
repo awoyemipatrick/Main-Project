@@ -7,6 +7,7 @@
 body {
   height: 100vh;
 }
+
 /* Header design */
 header {
   z-index: 3;
@@ -15,10 +16,8 @@ header {
 
 /* Logo design */
 .logo {
-  padding: 15px 20px 0 0;
   font-size: 22px;
   font-weight: 300;
-  vertical-align: middle;
   text-decoration: none;
 }
 
@@ -41,6 +40,7 @@ nav .menu-nav .menu-nav__item .menu-nav__link {
   color: rgb(7, 17, 15);
   font-size: 17px;
   padding: 7px 13px;
+  margin-right: 1.5rem;
   border-radius: 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -52,10 +52,15 @@ nav .menu-nav .menu-nav__item .menu-nav__link {
   transition: .5s;
 }
 
-.resume {
-  margin-left: 8rem;
-  padding-right: 2rem;
-}
+/* .resume {
+  margin: 0 2rem 0 5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  background: black;
+  color: #fff;
+  border-radius: 5px;
+} */
 
 /* Main page */
 
@@ -68,21 +73,47 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 .home-name {
   margin-bottom: 1rem;
+  text-align: center;
+  align-items: center;
 }
+
 .home-name h1 {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 45px;
 }
+
 .home-name p {
-  padding-top: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
 }
+
 .home-name .home-btn {
   background: rgb(0, 140, 207);
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   padding: 0.3rem;
   border-radius: 7px;
   border: 0;
+}
+
+.home__social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.home__social-icons a {
+  font-size: small;
+  color: rgb(0, 140, 207);
+  padding: 0.3em;
+}
+
+.home__social-icons a i:hover {
+  color: rgb(126, 81, 30);
+  transition: all 0.7s ease-in-out;
 }
 
 .home__intro {
@@ -97,6 +128,7 @@ main {
   font-size: 2.3rem;
   color: rgb(0, 140, 207);
 }
+
 .home__intro p {
   margin-top: 0.5rem;
   border: 2px solid;
