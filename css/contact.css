@@ -1,5 +1,11 @@
 * {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* overflow: hidden; */
 }
 
 .menu-btn {
@@ -70,18 +76,6 @@
 }
 
 
-
-/* Header design */
-header {
-    z-index: 3;
-    margin: 0.5rem;
-    visibility: visible;
-}
-
-.menu-btn {
-    visibility: hidden;
-}
-
 nav {
     display: flex;
     justify-content: flex-end;
@@ -89,7 +83,6 @@ nav {
     position: fixed;
     top: 0;
     margin: 0.5rem;
-    visibility: visible;
 }
 
 nav .menu-nav {
@@ -129,36 +122,32 @@ nav .menu-nav .menu-nav__link:hover {
     margin-left: 8rem;
 }
 
-main {
-    overflow: hidden;
+
+main .contact .contact-header {
+    font-size: 2.5rem;
+    color: rgb(0, 140, 207);
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    background: rgb(236, 234, 236);
 }
 
 main .contact {
-    height: 100vh;
-    background: #e0e0dc;
-    margin: 0 25%;
-    border-radius: 80px;
-}
-
-main .contact h2 {
-    font-size: 2rem;
-    color: rgb(0, 140, 207);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(224, 224, 220);
 }
 
-main .contact .form {
-    height: 60vh;
+.contact .form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-main .contact .form__group {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 20px;
 }
 
 main .contact .form__group input,
@@ -166,7 +155,6 @@ main .contact .form__group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(128, 128, 128, 0.199);
-    margin-top: 5px;
     resize: vertical;
 }
 
@@ -177,27 +165,30 @@ main .contact .form button[type=submit] {
     padding: 20px;
     font-size: 24px;
     border-radius: 8px;
-    color: rgb(0, 140, 207);
-    background-color: rgb(126, 81, 30);
-    text-align: center;
+    color: rgb(214, 226, 236);
+    background-color: rgb(0, 140, 207, 0.8);
     cursor: pointer;
     margin-top: 10px;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-main .contact .form button:hover {
+main .contact form .Sumbit:hover {
     background-color: rgb(214, 226, 236);
+    color: rgb(0, 140, 207);
 }
+
+
 
 /*  RESPONSIVE    */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .menu-btn {
         visibility: visible;
     }
 
     nav {
         margin-top: 0;
+        visibility: hidden;
     }
 
     nav.open {
@@ -211,7 +202,6 @@ main .contact .form button:hover {
         justify-content: center;
         margin-top: 0;
         height: 100vh;
-        overflow: hidden;
         background: rgba(124, 122, 122, 0.2);
         list-style-type: none;
         padding-right: 1rem;
@@ -268,7 +258,5 @@ main .contact .form button:hover {
         transition-delay: 0.45s;
     }
 }
-
-@media screen and (min-width: 1024px) {}
 
 @media screen and (min-width: 1600px) {}

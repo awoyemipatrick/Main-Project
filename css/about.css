@@ -1,5 +1,11 @@
 * {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .menu-btn {
@@ -70,11 +76,11 @@
 }
 
 /* Header design */
-header {
+/* header {
     z-index: 3;
     margin: 0.5rem;
     visibility: visible;
-}
+} */
 
 .menu-btn {
     visibility: hidden;
@@ -100,29 +106,45 @@ nav .menu-nav .menu-nav__item {
 }
 
 nav .menu-nav .active .menu-nav__link {
-    color: white;
+    background: rgb(126, 81, 30, 0.4);
+    color: rgb(0, 140, 207);
     font-weight: 700;
-    background: rgb(0, 140, 207);
     border-radius: 15px;
 }
 
 nav .menu-nav .menu-nav__link {
-    color: rgb(3, 20, 17);
+    background: rgb(126, 81, 30);
+    color: rgb(245, 247, 248);
     font-size: 17px;
     font-weight: 400;
     padding: 7px 13px;
+    border-radius: 7px;
     margin-right: 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 nav .menu-nav .menu-nav__link:hover {
-    background: rgb(24, 127, 218, 0.5);
-    color: rgb(41, 180, 169);
+    background: rgb(0, 140, 207);
+    color: rgb(245, 247, 248);
+    text-decoration: underline;
     border-radius: 15px;
     transition: 0.5s ease-in-out;
 }
 
+.resume {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    background: rgb(126, 81, 30);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.resume:hover {
+    background: rgb(126, 81, 30, 0.5);
+    transition: 0.5s ease;
+}
 
 /*  About Main Page     */
 
@@ -229,9 +251,23 @@ main .social-icons a i:hover {
     transition: all 0.7s ease-in-out;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    color: beige;
+    height: 2.5em;
+    padding: 0.7rem;
+    background: rgb(126, 81, 30, 0.8);
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+}
+
 /*  RESPONSIVE    */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .menu-btn {
         visibility: visible;
     }
@@ -276,13 +312,6 @@ main .social-icons a i:hover {
         margin-bottom: 3.5rem;
     }
 
-    nav .menu-nav .active .menu-nav__link {
-        font-weight: 700;
-        background: white;
-        color: rgb(0, 140, 207);
-        border-radius: 15px;
-    }
-
     nav .menu-nav__link {
         display: inline-block;
         font-size: 2rem;
@@ -307,6 +336,16 @@ main .social-icons a i:hover {
     .menu-nav__item:nth-child(4) {
         transition-delay: 0.45s;
     }
+
+    .menu-nav__item:nth-child(5) {
+        transition-delay: 0.55s;
+    }
+
+    .resume {
+        background: rgba(48, 34, 19, 0.9);
+        text-decoration: underline;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {}

@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      href="/dist/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="/css/contact.css" />
-   
-    <title>Contact Awoyemi Patrick</title>
-  </head>
-  <body>
-    <header>
-      <a class="logo" href="">
-        Awoyemi Patrick
-      </a>
 
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-nav__item">
-            <a href="index.html" class="menu-nav__link"> Home </a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="projects.html" class="menu-nav__link"> Projects </a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="about.html" class="menu-nav__link"> About Me </a>
-          </li>
-          <li class="menu-nav__item active">
-            <a href="contact.html" class="menu-nav__link"> Contact Me </a>
-          </li>
-          <li>
-            <a href="#" class="resume">
-              Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="/dist/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/contact.css" />
+
+  <title>Contact Awoyemi Patrick</title>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="">
+      Awoyemi Patrick
+    </a>
+
+    <nav class="nav">
+      <ul class="menu-nav">
+        <li class="menu-nav__item">
+          <a href="index.html" class="menu-nav__link"> Home </a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="projects.html" class="menu-nav__link"> Projects </a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="about.html" class="menu-nav__link"> About Me </a>
+        </li>
+        <li class="menu-nav__item active">
+          <a href="contact.html" class="menu-nav__link"> Contact Me </a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="https://drive.google.com/file/d/14BwFxMz76mWcwSdAiPnod1NMshpb7qp_/view?usp=sharing" target="_blank" class="resume">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-btn">
+      <span class="menu-btn__burger"></span>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- <section class="social">
+      <div class="social-icons">
+        <a href="#!">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
       </div>
-    </header>
+    </section> -->
 
+  
+    <section class="contact">
+      
+        <h1 class="contact-header">Contact Me..</h1>
     
-    <main>
-      <section class="contact">
+
+      <div class="form">
+
+        <form name="contact" action="https://formspree.io/f/mlevezza" id="my_form" method="POST">
+
+          <div class="form__group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+          </div>
+
+          <div class="form__group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="example@mail.me" required>
+          </div>
+
+          <div class="form__group">
+            <label for="massage">Massage</label>
+            <textarea name="massage" id="massage" cols="30" rows="10" maxlength="200" placeholder="Messages"
+              required></textarea>
+          </div>
+
+          <button class="Sumbit" type="submit" id="submit" value="send">Submit</button>
+        </form>
         <div class="social-icons">
           <a href="#!">
             <i class="fab fa-twitter fa-2x"></i>
@@ -62,38 +109,13 @@
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
+      </div>
+    </section>
 
-        <div class="form">
-          <form name="contact" action="https://formspree.io/f/mlevezza" id="my_form" method="POST">
-            <h2>Contact Me..</h2>
-            <div class="form__group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="John" required>
-            </div>
-        
-            <div class="form__group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-            </div>
-        
-            <div class="form__group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="Email" placeholder="example@mail.me" required>
-            </div>
-        
-            <div class="form__group">
-              <label for="massage">Massage</label>
-              <textarea name="massage" id="massage" cols="30" rows="10" maxlength="200" placeholder="Messages" required></textarea>
-            </div>
-        
-            <button type="submit" id="submit" value="send">Submit</button>
-          </form>
-        </div>
-      </section>
-    
-    </main>
+  </main>
 
-    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
