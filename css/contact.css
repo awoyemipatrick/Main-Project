@@ -119,6 +119,7 @@ nav .menu-nav .menu-nav__link:hover {
 }
 
 
+
 .contact .contact-header {
     font-size: 2.5rem;
     color: rgb(0, 140, 207);
@@ -153,10 +154,11 @@ main .contact .form__group textarea {
     resize: vertical;
 }
 
-main .contact button {
+main .contact .form #submit {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     border: none;
     outline: none;
     padding: 10px;
@@ -176,10 +178,11 @@ main .contact .Sumbit:hover {
 
 main .social-icons {
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    flex-direction: column;
-    transform: translate(0, -16em);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    /* flex-direction: column; */
+    /* transform: translate(0, -16em); */
 }
 
 main .social-icons a {
