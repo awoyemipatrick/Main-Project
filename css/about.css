@@ -217,8 +217,10 @@ main .about .experience ul li {
 
 main .social-icons {
     display: flex;
+    align-items: baseline;
     flex-direction: column;
-    transform: translate(5%, -15rem);
+    width: min-content;
+    transform: translate(2em, -15rem);
 }
 
 main .social-icons a {
